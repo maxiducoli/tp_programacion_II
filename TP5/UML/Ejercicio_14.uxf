@@ -1,0 +1,81 @@
+<diagram program="umletino" version="15.1">
+  <zoom_level>10</zoom_level>
+
+  <!-- Clase: EditorVideo -->
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>60</y>
+      <w>170</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes><![CDATA[EditorVideo
+-
+<<crea>>
++ exportar(formato: String, proyecto: Proyecto)]]></panel_attributes>
+    <additional_attributes></additional_attributes>
+  </element>
+
+  <!-- Clase: Render -->
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>60</y>
+      <w>170</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes><![CDATA[Render
+-
+- formato: String
+- proyecto: Proyecto]]></panel_attributes>
+    <additional_attributes></additional_attributes>
+  </element>
+
+  <!-- Clase: Proyecto -->
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>180</y>
+      <w>170</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes><![CDATA[Proyecto
+-
+- nombre: String
+- duracionMin: int]]></panel_attributes>
+    <additional_attributes></additional_attributes>
+  </element>
+
+  <!-- Relación: Asociación unidireccional (Render → Proyecto) -->
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>100</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes><![CDATA[lt=<.
+m1=1
+m2=1]]></panel_attributes>
+    <additional_attributes>10;10;130;10</additional_attributes>
+  </element>
+
+  <!-- Relación: Dependencia de creación (EditorVideo → Render) -->
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>90</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes><![CDATA[lt=<..
+m1=
+m2=]]></panel_attributes>
+    <additional_attributes>10;10;140;10</additional_attributes>
+  </element>
+</diagram>

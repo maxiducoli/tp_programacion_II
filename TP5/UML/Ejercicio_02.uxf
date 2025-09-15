@@ -1,0 +1,100 @@
+<diagram program="umletino" version="15.1">
+  <zoom_level>10</zoom_level>
+
+  <!-- Clase: Celular -->
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>100</y>
+      <w>180</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes><![CDATA[Celular
+-
+- imei: String
+- marca: String
+- modelo: String
+- bateria: Bateria
+- usuario: Usuario]]></panel_attributes>
+    <additional_attributes></additional_attributes>
+  </element>
+
+  <!-- Clase: Batería -->
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>100</y>
+      <w>160</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes><![CDATA[Bateria
+-
+- modelo: String
+- capacidad: int]]></panel_attributes>
+    <additional_attributes></additional_attributes>
+  </element>
+
+  <!-- Clase: Usuario -->
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>320</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes><![CDATA[Usuario
+-
+- nombre: String
+- dni: String
+- celular: Celular]]></panel_attributes>
+    <additional_attributes></additional_attributes>
+  </element>
+
+  <!-- Relación: Agregación (Celular → Batería) -->
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>140</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes><![CDATA[lt=◇-
+m1=1
+m2=1]]></panel_attributes>
+    <additional_attributes>10;10;130;10</additional_attributes>
+  </element>
+
+  <!-- Relación: Asociación bidireccional (Celular → Usuario) -->
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>230</y>
+      <w>40</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes><![CDATA[lt=<.
+m1=1
+m2=1]]></panel_attributes>
+    <additional_attributes>10;10;10;90</additional_attributes>
+  </element>
+
+  <!-- Flecha inversa para completar la bidireccionalidad -->
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>230</y>
+      <w>40</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes><![CDATA[lt=<.
+m1=1
+m2=1]]></panel_attributes>
+    <additional_attributes>10;90;10;10</additional_attributes>
+  </element>
+</diagram>

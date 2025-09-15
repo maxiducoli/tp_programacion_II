@@ -1,0 +1,83 @@
+<diagram program="umletino" version="15.1">
+  <zoom_level>10</zoom_level>
+
+  <!-- Clase: CitaMédica -->
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>100</y>
+      <w>200</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes><![CDATA[CitaMedica
+-
+- fecha: Date
+- hora: String
+- paciente: Paciente
+- profesional: Profesional]]></panel_attributes>
+    <additional_attributes></additional_attributes>
+  </element>
+
+  <!-- Clase: Paciente -->
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>60</y>
+      <w>170</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes><![CDATA[Paciente
+-
+- nombre: String
+- obraSocial: String]]></panel_attributes>
+    <additional_attributes></additional_attributes>
+  </element>
+
+  <!-- Clase: Profesional -->
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>180</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes><![CDATA[Profesional
+-
+- nombre: String
+- especialidad: String]]></panel_attributes>
+    <additional_attributes></additional_attributes>
+  </element>
+
+  <!-- Relación: Asociación unidireccional (CitaMédica → Paciente) -->
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>120</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes><![CDATA[lt=<.
+m1=1
+m2=1]]></panel_attributes>
+    <additional_attributes>10;10;130;10</additional_attributes>
+  </element>
+
+  <!-- Relación: Asociación unidireccional (CitaMédica → Profesional) -->
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>160</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes><![CDATA[lt=<.
+m1=1
+m2=1]]></panel_attributes>
+    <additional_attributes>10;10;130;10</additional_attributes>
+  </element>
+</diagram>
